@@ -21,4 +21,46 @@
 ## Elastic Stack
 
 - Aula 5: Introdução ao Elastic Stack
-    -
+    - Voltando no tempo: Era conhecido como ELK Stack
+        - Elastisearch: Search engine e analytics
+        - Logstash: Processador de dados através de pipelines que consegue receber, transformar e enviar dados simultaneamente
+        - Kibana: Permite usuários a visualizarem os dados do elasticsearch em diversas perspectivas
+    - Elastisearch
+        ![Observabilidade](img/observability3.png)
+        - Search engine e analytics
+        - Apache Lucene
+        - 2010: Elasticsearch N.V (Elastic)
+        - Rápido
+        - Escalável
+        - API Rest
+        - Análise e visualização geoespacial
+        - Application, website e enterprise search
+        - Logging e analytics
+        - Trabalha de forma distribuída através de shards que possuem redundância de dados.
+        - Pode escalar milhares de servidores e manipular petabytes de dados
+
+- Aula 6: Mais sobre Logstash
+    - Logstash
+        ![Observabilidade](img/observability2.png)
+        - Engine coletora de dados em tempo real
+        - Iniciou como manipulador de logs
+        - Trabalha com pipelines
+        - Recebe dados de múltiplas fontes
+        - Normaliza e transforma dados
+        - Envia dados para múltiplas fontes
+        - Plugins
+
+- Aula 7: Sobre o Kibana
+    - Kibana
+        ![Observabilidade](img/observability4.png)
+        - Ferramenta de visualização e exploração de dados
+        - Usada com: Logs, Análise de séries, Monitoramento de aplicações e inteligência operacional
+        - Integrado com Elasticsearch
+        - Agregadores e filtragem de dados
+        - Dashboards
+        - Gráficos interativos
+        - Mapas
+
+- Aula 8: Beats e Elastic Stack
+    - 
+    
