@@ -62,5 +62,47 @@
         - Mapas
 
 - Aula 8: Beats e Elastic Stack
-    - 
+    - Qual a diferença entre ELK Stack e Elastic Stack?
+        Beats
+        ![Observabilidade](img/observability5.png)
+        - Beats foi anunciado em 2015
+        - "Lightweight data shipper"
+        - Agente Coletor de dados
+        - Integrado facilmente com Elasticsearch ou Logstash
+        - Logs, Métricas, Network data, Audit Data, Uptime Monitoring
+        - Você pode contruir seu próprio Beat
+        Elastic Stack
+        ![Observabilidade](img/observability6.png)
+        Elastic
+        - Empresa por trás das soluções
+        - Cloud Solution
+        - Oferecem plugins e recursos licenciados
+        - Produtos
+            - APM
+            - Maps
+            - Site Search
+            - Enterprise Search
+            - App Search
+            - Infrastructure
+    
+- Aula 9: Iniciando com Elasticsearch e Kibana
+    - Site da elastic <https://www.elastic.co/pt/>
+    - Github elastic <https://github.com/elastic>
+    - Copiando o dockercompose do repositório
+    ```
+    docker-compose up -d
+    ```
+    ```
+    http://localhost:5601
+    ```
+    - Irá pedir um token, para isso precisa rodar o seguinte comando:
+    ```
+    docker exec -it elasticsearch /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+    ```
+    ``` 
+    docker exec kibana kibana-verification-code
+    ```
+
+- Aula 10: Visão geral do Kibana
+    
     
