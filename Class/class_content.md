@@ -95,14 +95,52 @@
     ```
     http://localhost:5601
     ```
-    - Irá pedir um token, para isso precisa rodar o seguinte comando:
-    ```
-    docker exec -it elasticsearch /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
-    ```
-    ``` 
-    docker exec kibana kibana-verification-code
-    ```
+    - Estou utilizando a versão 7.13.0 igual a do curso para poder seguir. Os comandos abaixo foram tentativas de instalação das novas versões (8.0)
+        - Irá pedir um token, para isso precisa rodar o seguinte comando:
+        ```
+        docker exec -it elasticsearch /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+        ```
+        ``` 
+        docker exec kibana kibana-verification-code
+        ```
 
 - Aula 10: Visão geral do Kibana
-    
-    
+    - Mostrou um pouco da ferramentas e algumas abas de onde iremos trabalhar.
+
+- Aula 11: Metricbeat
+    - Criando o arquivo metricbeats.yaml
+    - Inserindo o metricbeat dentro do docker-compose
+    ```
+    docker-compose up -d
+    ```
+    - Adicionada a seguinte linha no arquivo docker-compose devido a um erro de permissão no arquivo do metricbeat.
+    ```
+    command: ["--strict.perms=false"]
+    ```
+    - Visualizando as primeiras métricas e Dashboards
+
+- Aula 12: Uptime e Heartbeat
+    - Criando o arquivo heatbeat.yaml
+    ```
+    docker-compose up -d
+    ```
+    - Inserida a mesma linha de permissão que foi colocada no arquivo do metricbeat também dentro do heartbeat.
+    ```
+    command: ["--strict.perms=false"]
+    ```
+    - Verificando a aba Uptime
+
+- Aula 13: Configurando APM
+    - Criando o arquivo apm-server.yaml
+    - Inserida a mesma linha de permissão que foi colocada nos arquivos do metricbeat e do heartbeat dentro do arquivo de apm
+    ```
+    command: ["--strict.perms=false"]
+    ```
+
+- Aula 14: APM na prática
+    - Documentação de agents de APM <https://www.elastic.co/guide/en/apm/agent/index.html>
+    - Criando a pasta APP e subindo a aplicação:
+    ```
+    docker-compose up -d
+    ```
+    - Mostrando a aba do Kibana de APM
