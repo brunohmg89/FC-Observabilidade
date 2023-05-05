@@ -144,3 +144,21 @@
     docker-compose up -d
     ```
     - Mostrando a aba do Kibana de APM
+
+- Aula 15: Logs no APM
+    - Mostrou sobre a parte de erros da aplicação dentro da aba de APM, verifiquei o código e está igual ao da aula, porém não mostrou a parte do erro.
+
+- Aula 16: Configurando nginx
+    - A pasta do Nginx serve como um proxy, ao invés de acessar o app pela URL <http://localhost:8000/exemplo> acessamos o nginx e ele encaminha a solicitação acessando pela URL <localhost:8280/exemplo> configurado no docker-compose da app.
+
+- Aula 17: Configurando o Filebeat
+    - Mandando os logs do Nginx para o Elastic
+    - Mostrando a configuração via agent, copiando o arquivo filebeat para dentro do container do Nginx e vendo no Elastic na aba de Logs
+    - Devido a minha estrutura de pastas, tive que alterar a rede dos containers do app
+
+- Aula 18 - Fazendo deploy na Elastic Cloud
+    - Criar conta no site da Elastic <https://cloud.elastic.co/registration>
+    - Criando o deployment e guardando as credenciais do elastic que foram geradas.
+
+- Aula 19: Configurando Filebeat na Elastic Cloud
+    - 

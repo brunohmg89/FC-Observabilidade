@@ -14,7 +14,7 @@ services:
       ports:
         - "5432:5432"
       networks: 
-        - observability
+        - code_observability
 
     pgadmin:
       image: dpage/pgadmin4
@@ -26,7 +26,7 @@ services:
       ports:
         - "9001:80"
       networks: 
-        - observability
+        - code_observability
     
     app:
       build: .
@@ -39,7 +39,7 @@ services:
       depends_on:
         - db
       networks: 
-        - observability
+        - code_observability
     
     nginx:
       build: ../nginx
@@ -47,8 +47,8 @@ services:
       ports:
         - "8280:80"
       networks: 
-        - observability
+        - code_observability
 
 networks:
-  observability:
+  code_observability:
     external: true     
