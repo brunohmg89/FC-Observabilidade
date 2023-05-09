@@ -263,4 +263,6 @@
     - Inserindo cAdvisor dentro dos arquivos yaml do Prometheus
 
 - Aula 34: Apresentando o Grafana
+    - Adicionando o prometheus
+    - Adicionado dashboard do Cadvisor 
     
