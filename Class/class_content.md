@@ -161,4 +161,106 @@
     - Criando o deployment e guardando as credenciais do elastic que foram geradas.
 
 - Aula 19: Configurando Filebeat na Elastic Cloud
-    - 
+    - Tentei configurar o filebeat na elastic cloud porém não consegui, voltar a esse módulo em outra oportunidade depois de atualizado.
+
+- Aula 20: Integrando serviços na Elastic Cloud
+    - Tour realizado pelo Elastic Cloud.
+
+## Prometheus
+
+- Aula 21: Prometheus
+    - Aula de introdução ao curso sobre Prometheus
+
+- Aula 22: Conceitos iniciais
+    - "From metrics to insight. Power your metrics ans alerting with a leading open-source monitoring solution."
+    - "Prometheus é um toolkit de monitoramento e alerta de sistema open-source"
+    - Criado pela SoundCloud
+    - Faz parte da Cloud Native Computing Foundation
+    - Dados dimensionais
+    - Consultas poderosas
+    - Fácil visualização dos dados em conjunto com Grafana
+    - Storage eficiente
+    - Simples
+    - Alerta inteligente
+    - Diversidade de clientes e integrações
+
+- Aula 23: Dinâmica de funcionamento
+    - Conceitos iniciais
+    ![Observabilidade](img/observability7.png)
+
+- Aula 24: Prometheus vs pull
+    - Você adapta sua aplicação ao formato do Prometheus
+    ![Observabilidade](img/observability8.png)
+
+- Aula 25: Dinâmica dos exporters
+    - Informações relevantes ao negócio (Exemplo loja)
+        - Quantidade de compras
+        - Tempo de resposta no processo de compra
+        - Quantidade de usuários logados
+        - Utilização da feature X
+        - Busca específica no site
+    - E quando não foi você que desenvolveu?
+        - MySQL
+        - Nginx / Apache
+        - Servidor Linux
+        - Etc...
+    - Exporters
+    ![Observabilidade](img/observability9.png)
+
+- Aula 26: Arquitetura do Prometheus
+    - Arquitetura
+    ![Observabilidade](img/observability10.png)
+
+- Aula 27: Trabalhando com dados
+    - Armazenamento
+        - TSDB (Time Series Database)
+        - Armazenamento de dados que mudam conforme o tempo
+        - Labels para propriedades específica de uma determinada métrica (error_type=500)
+        - Otimização específica para essa caso de uso, garantindo mais performance do que bancos de dados convencionais
+        - Quanto mais novos os dados, mais precisão
+
+- Aula 28: Tipos de mátricas
+    - Métricas: Counter
+        - Valor incremental
+        - Prometheus consegue absorver falhas no caso esse número tenha um eventual reset
+            - Quantidade de visitas em um site
+            - Quantidade de vendas
+            - Quantidade de erros
+    - Métricas: Gauge
+        - Valor pode possuir variações com o tempo
+        - Aumentar / Diminuir / Estabilizar
+            - Quantidade de usuários online
+            - Quantidade de servidores ativos
+    - Métricas: Histogram
+        - Distribuição de frequência
+        - Medição é baseado em amostras
+        - Consegue agregar valores
+    - Métricas: Summary
+        - Muito similar ao histogram
+        - Com o summary os valores são calculados no servidor de aplicação não no prometheus
+        - Bom para aproximação de valores
+            - Requesti duration
+        - De forma geral, é muito mais comum utilizar o histogram
+
+- Aula 29: PromQL
+    - Prometheus Query Language (SQL do Prometheus)
+    - Exemplo:
+        - http_request_total
+        - rate(http_requests_total[5m])
+        - http_requests_total{status!~"4.."}
+
+- Aula 30: Tour no prometheus.io
+    - Site oficial <https://prometheus.io/>
+
+- Aula 31: Executando Prometheus pela primeira vez
+    - Copiando arquivos yaml e subindo o prometheus
+
+- Aula 32: Visão geral do dashboard padrão
+    - Mostrando as primeiras abas do prometheus <localhost:9090>
+
+- Aula 33: Utilizando cAdvisor
+    - Documentação <https://prometheus.io/docs/guides/cadvisor/>
+    - Inserindo cAdvisor dentro dos arquivos yaml do Prometheus
+
+- Aula 34: Apresentando o Grafana
+    
