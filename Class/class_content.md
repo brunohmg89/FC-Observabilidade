@@ -265,4 +265,24 @@
 - Aula 34: Apresentando o Grafana
     - Adicionando o prometheus
     - Adicionado dashboard do Cadvisor 
-    
+    - Link dos dashboards do Grafana <https://grafana.com/grafana/dashboards/>
+    - Adicionando o Dash do cAdvisor <https://grafana.com/grafana/dashboards/14282-cadvisor-exporter/>
+    - Adicionando via ID (14282) no Grafana
+    - Adicionando o Dash Docker-Advisor <https://grafana.com/grafana/dashboards/13946-docker-cadvisor/>
+    - Adicionando via ID (13946) no Grafana
+
+- Aula 35: Preparando ambiente Golang
+    - Modificando o docker-compose e adicionando aplicação Go.
+    - Acessando o container Go.
+    ```
+    docker exec -it app bash
+    ```
+    ```
+    go mod init github.com/brunohmg89/FC-Observabilidade/Code/prometheus
+    ```
+    ```
+    go mod tidy -e
+    ```
+
+- Aula 36: Criando métrica do tipo Gauge
+    - 
