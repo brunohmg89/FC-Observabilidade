@@ -285,4 +285,20 @@
     ```
 
 - Aula 36: Criando métrica do tipo Gauge
+    - Modificada a app para trabalhar com métricas do tipo Gauge.
+
+- Aula 37: Trabalhando com Counter
+    - Modificada a app para trabalhar com métricas do tipo Counter
+
+- Aula 38: Criando Histogram
+    - Modificada a app para trabalhar com métricas do tipo Histogram
+
+- Aula 39: Ativando novo target no Prometheus
+    - Modificando o arquivo prometheus.yml
+    ```
+    docker-compose restart prometheus
+    ```
+    - Adicionando novo targe dentro do prometheus
+
+- Aula 40: Criando dashboard usando Gauge
     - 
