@@ -301,4 +301,18 @@
     - Adicionando novo targe dentro do prometheus
 
 - Aula 40: Criando dashboard usando Gauge
-    - 
+    - Criando dashboard no Grafana de Online user e acertando tresholds
+
+- Aula 41: Adicionando painel Counter
+    - Adicionando dashboards com requests total
+
+- Aula 42: Painel com Histogram
+    - Alterando o go app, adicionando time sleep
+    - Adicionando dashboard requests duration
+
+- Aula 43: Configurando alerta no Grafana
+    - Configurando um alerta via Telegram
+    - Criado canal de notificação
+
+- Aula 44: Disparando alarmes
+    - Entrando em uma das métricas para inserir o canal de notificação para gerar o alerta.
