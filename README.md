@@ -1,2 +1,9 @@
-# FC-Observabilidade
-Curso da FullCycle sobre Observabilidade
+# FullCycle - Observabilidade
+
+## Descrição
+
+Curso sobre Observabilidade
+
+# Status do curso
+
+Concluído
